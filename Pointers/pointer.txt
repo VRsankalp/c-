@@ -1,0 +1,18 @@
+pointer to constant 
+ syntax = const int *p;&a
+ You cannot chnage the pointer value via the pointers ;
+ but you can chnge the value to [point] somewhere 
+
+CONSTANT POINTER  
+ in this the value change but the ppointer is same 
+ syntax == int*const p =&a
+
+CONSTANT POINTER TO CINSTANT DATA 
+ you cannot change the value of the pointer or the value .
+ syntax ==  const int * const p = &a;
+
+GENERIC POINTR (VOID POINTER)
+ A generic pointer is a pointer of type VOID 
+ It can store the address of any data type 
+ But since it doesn't know the data type , you must tyoecast it before dereferncig.
+ SYNTAX == void * ptr 

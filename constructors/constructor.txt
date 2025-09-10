@@ -1,0 +1,42 @@
+Introduction to Constructors 
+ 
+What is a Constructor?
+- Special member function
+- Same name as class
+- Automatically called when object is created
+- NO return type
+
+Need of Constructors:
+- Initialization of objects
+- Avoid manual setting of values
+
+
+Characteristics of Constructors
+- Automatically invoked 
+- Can be overloaded
+- Cannot return values
+- Declared Public 
+
+Types of Constructors
+1. Default Constructor
+2. Parameterized
+3. Copy Constructor
+
+Q. What happens if you don't  provide a constructor?
+Compiler provides a default constructor Automatically
+- This is called the default (implicit) constructor.
+- It takes no arguments and does nothing special (just creates the object).
+
+Parameterized & Copy Constructor
+    Parameterized Constructor
+    - Allows passing arguments during object creation
+
+    Copy Constructor
+    - Initializes a new object as a copy of another object
+
+Question 
+Q1. Write a program in C++ to demonstrate the use of a Parameterized constructor
+- Create a class Human with data members name and age
+- Initialize these values using a Parameterized constructor
+- Define a function show() to display the values
+- Create three objects of the class display their details
