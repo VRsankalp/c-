@@ -1,0 +1,37 @@
+ENCAPSULATION --
+-- Encapsulaton is th binding of data and methods together into a single unit (class).
+--Also known as Data.
+-- Achived using access specifiers (private , public , protected ).
+
+KEY POINTS --
+--Protects data from direct access .
+--Only allows controlled access through methods .
+--Makes program secure and modular .
+
+ADVANTAGES ---
+--Data Hiding -> sensitive data secure .
+--Code Reusibility -> well - structure data .
+--Modularity -> each class acts as a capsule .
+--Easy Maintenance 
+
+ACCESS MODIFER
+--Public-- 
+        .Member decleared as public are accesible from anywhere inside the class , outside class , and in 
+        derived class.
+        -Used when you want free access to class members .
+
+--Privte--
+        -Member declared as private are accesible only inside the class .
+        -They cannot be accesed directly .
+
+--protected--
+        -members declared as protected as accessible inside the  class and in derived classes . but not from outsid
+            in the class.
+        -useful for inheritance when you want child classes to use members , but not outsiders.
+
+
+INHERITANCE --
+    Mechanisem of deriving new classes (derived /classes) from existing classes (base / parent ).
+     --Example-- 
+        :Vehicle -> Car , Bike 
+        :

@@ -1,0 +1,41 @@
+MEMORY LEAK 
+a memory leak occurs when  a program dynamically allocates memory but fails to release it after its no longer needed
+
+
+As a result :
+ -> that memory stays "reserved" for the program ;
+ -> the opertaing system can't reuse it .
+ -> Over time if leaks keep happening the program will consecutive more and more memory 
+    possibly crashing or slowing down the system.
+
+DESTRUCTOR
+ ->Destructor is a special member function in C++ .
+ ->it is used to destroy objects and release resources .
+ -> Automatically called when the object goes out of scope .
+ -> Denoted with tilde (~)symbol before class name .
+ 
+ KEY Characteristics->
+       name is same as class but predefine with(~)
+     .no return type.
+     . no parameter allowed .
+     . only one destructor per class(cannot be overloaded);
+     .called in reverse order of Constructor calls .
+
+USE CASES:
+        -> releasing dynamically allocated memory .
+        -> closing files and database connections 
+        -> freeing resources like socket threads handles etc .
+        -> preventing memory leaks in programs.
+
+STATIC MEMBER 
+ -> declaerd inside a class with the keyword static .
+ -> shared by all objects of the class (only one copy exists ).
+ -> memory is allocated once . not per objects ,
+ -> must be defined outside the class as well .
+
+
+STATIC MEMBER function
+ decleared inside a class with the keyword ststic .
+ can be called without an object using  ClassName :: functions ().
+ Can only access static data member's( since they don"t belonging to any specified object )
+
