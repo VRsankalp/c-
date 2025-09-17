@@ -16,8 +16,8 @@ ADVANTAGES ---
 
 ACCESS MODIFER
 --Public-- 
-        .Member decleared as public are accesible from anywhere inside the class , outside class , and in 
-        derived class.
+        -Member decleared as public are accesible from anywhere inside the class , outside class , and in 
+         derived class.
         -Used when you want free access to class members .
 
 --Privte--
@@ -30,8 +30,51 @@ ACCESS MODIFER
         -useful for inheritance when you want child classes to use members , but not outsiders.
 
 
-INHERITANCE --
-    Mechanisem of deriving new classes (derived /classes) from existing classes (base / parent ).
+----------------------------------=INHERITANCE=----------------------------------------------------------------
+ 
+ 
+Mechanisem of deriving new classes (derived /classes) from existing classes (base / parent ).
      --Example-- 
-        :Vehicle -> Car , Bike 
-        :
+        :Vehicle -> Car , Bike .
+        :Employee -> Manager ,Developer .
+        
+        SYNTAX -- 
+                class Base {
+                        public:
+                         int x ; 
+                };
+
+                class Derived : public Base{
+                        public :
+                         int x ; 
+                };
+----ADVANTAGES----
+>code reuse 
+>Less redundancy 
+>Easier Maintenance
+>Faster development 
+
+
+3> real-life examples of Inheritance --
+--- Vehical inheritance-
+                base class  vehical features -> speed,fuel , capacity ;
+---Derived class --
+                Car features -> AC , MUSIC  system 
+--- Employe inheritance --
+ base class - employee 
+-----------------    TYPES OF INHERITANCE       -----------------------
+--single inheritance -> a derived class inheites from only one base class.
+--multiple inheritance -> a derived inherites from more than one base class.
+--Multilevel inheritance -> A chain  of inheritance where a derived class is further inheited by another class.
+--Hierarchical inheritance-> Multiple derived classes inherit from the same base class .
+--Hybrid inheritance -> Combination of more than one type of inheritance .Often leads to DAIMOND PROBLEM 
+                        using virtual base class.
+                        
+
+
+
+--BASE CLASS-- --public inheritance --- protected inheritance -- private inheritance---
+ -Public------>> public ---------------->> protrcted ----------->> private 
+ -Protected----->> protected ----------->>Protected ------------>>private
+ -Private ------->> private------------->> private-------------->>Private
+
