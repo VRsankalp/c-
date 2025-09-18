@@ -78,3 +78,32 @@ Mechanisem of deriving new classes (derived /classes) from existing classes (bas
  -Protected----->> protected ----------->>Protected ------------>>private
  -Private ------->> private------------->> private-------------->>Private
 
+
+--------------------------------------POLYMORPHISM--------------------------------------------------
+--->The word polymorphism comes from a "poly" means (many) and "morphisa"means (forms) .
+---> In C++ OOP polymorphism means the ability of an object (or function ) to take multiple froms . 
+---> it allows us to perform  single action in diiferent way.
+
+=================================TYPES OF POLYMORPHISM===================================
+1> Compile time polymorphism,
+        .. Decided at compile time .
+        .. achived using 
+        a>Function overloading 
+        b> Operator overloading .
+2>Run time polymorphism.
+        ..Decided at run time not by compile time . 
+        .. achived at using .
+        --1> virtual function and inheritance .
+===============Run time polymorphism============
+-> it means the decision of which function to call is made at running , not at compile time .
+ ACHUVED USING 
+  -> virtual function (BASE CLASS)
+  ->function overriding (Derived class)
+  ->base class pointer / reference 
+
+  IF ANY thing is created with using NEW  it is compile time 
+
+  VIRTUAL FUNCTION-
+  it is a membre function in the base class that is declared with the keyword virtual;
+  it allow the derived class to override it ;l
+  when accused using a base class pointer /reference the derived version executes at the runtime.b

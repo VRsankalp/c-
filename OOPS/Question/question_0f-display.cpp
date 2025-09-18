@@ -9,8 +9,8 @@ class A {
 class B:public A {
     public:
         void display(){
-            cout<<"hello B";
-        }
+             cout<<"hello B";
+         }
 };
  class C : public A{
     public:
@@ -18,7 +18,7 @@ class B:public A {
             cout<<"hello C";
         }
 };
-class D :public B ,public C{
+class D :public B ,public C , public A {
     public:
 };
 int main(){
@@ -26,7 +26,6 @@ int main(){
     B b ;
     C c ;
     D d ;
-    d.B::A::display();
     return 0 ;
 }
  
