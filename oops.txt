@@ -117,4 +117,17 @@ Mechanisem of deriving new classes (derived /classes) from existing classes (bas
   assential features of an object .
   ->Focuse on what an object does , not no how it does it .
    EXAMPLE 
-    car-> User process accelration , but doesn't need to know the  engine works ,\
+    car-> User process accelration , but doesn't need to know the  engine works ,
+
+
+    Pure Virtual Function 
+    -> a virtual function with no definition  = 0 at and 
+    .Makes a class abstract
+    .must be overridde in derived class . otherwise in derived class also becomes abstract.
+
+
+    =======ABSTRACT CLASS =====
+    an abstract class in c++ is a class that cannot be instatiated (you cannot create objects of a )
+    >it is designed to be a base class for the function classes 
+    >it contain at least one pure virtual function.
+    

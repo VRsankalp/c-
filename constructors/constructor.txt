@@ -32,12 +32,14 @@ Parameterized & Copy Constructor
     - Allows passing arguments during object creation
 
     Copy Constructor
-    - Initializes a new object as a copy of another object
+    - Initializes a new object as a copy of another object.
+    WITHOUT USING THE this we can make the object but  when an destructor is called so it create an error .
+    as if it called and 
     
 
-Question 
+Question ----
 Q1. Write a program in C++ to demonstrate the use of a Parameterized constructor
 - Create a class Human with data members name and age
 - Initialize these values using a Parameterized constructor
 - Define a function show() to display the values
-- Create three objects of the class display their details
+- Create three objects of the class display their details.
