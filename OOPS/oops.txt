@@ -1,0 +1,133 @@
+ENCAPSULATION --
+-- Encapsulaton is th binding of data and methods together into a single unit (class).
+--Also known as Data.
+-- Achived using access specifiers (private , public , protected ).
+
+KEY POINTS --
+--Protects data from direct access .
+--Only allows controlled access through methods .
+--Makes program secure and modular .
+
+ADVANTAGES ---
+--Data Hiding -> sensitive data secure .
+--Code Reusibility -> well - structure data .
+--Modularity -> each class acts as a capsule .
+--Easy Maintenance 
+
+ACCESS MODIFER
+--Public-- 
+        -Member decleared as public are accesible from anywhere inside the class , outside class , and in 
+         derived class.
+        -Used when you want free access to class members .
+
+--Privte--
+        -Member declared as private are accesible only inside the class .
+        -They cannot be accesed directly .
+
+--protected--
+        -members declared as protected as accessible inside the  class and in derived classes . but not from outsid
+            in the class.
+        -useful for inheritance when you want child classes to use members , but not outsiders.
+
+
+----------------------------------=INHERITANCE=----------------------------------------------------------------
+ 
+ 
+Mechanisem of deriving new classes (derived /classes) from existing classes (base / parent ).
+     --Example-- 
+        :Vehicle -> Car , Bike .
+        :Employee -> Manager ,Developer .
+        
+        SYNTAX -- 
+                class Base {
+                        public:
+                         int x ; 
+                };
+
+                class Derived : public Base{
+                        public :
+                         int x ; 
+                };
+----ADVANTAGES----
+>code reuse 
+>Less redundancy 
+>Easier Maintenance
+>Faster development 
+
+
+3> real-life examples of Inheritance --
+--- Vehical inheritance-
+                base class  vehical features -> speed,fuel , capacity ;
+---Derived class --
+                Car features -> AC , MUSIC  system 
+--- Employe inheritance --
+ base class - employee 
+
+
+-----------------    TYPES OF INHERITANCE       -----------------------
+--single inheritance -> a derived class inheites from only one base class.
+--multiple inheritance -> a derived inherites from more than one base class.
+--Multilevel inheritance -> A chain  of inheritance where a derived class is further inheited by another class.
+--Hierarchical inheritance-> Multiple derived classes inherit from the same base class .
+--Hybrid inheritance -> Combination of more than one type of inheritance .Often leads to DAIMOND PROBLEM 
+                        using virtual base class.
+                        
+
+
+
+--BASE CLASS-- --public inheritance --- protected inheritance -- private inheritance---
+ -Public------>> public ---------------->> protrcted ----------->> private 
+ -Protected----->> protected ----------->>Protected ------------>>private
+ -Private ------->> private------------->> private-------------->>Private
+
+
+--------------------------------------POLYMORPHISM--------------------------------------------------
+--->The word polymorphism comes from a "poly" means (many) and "morphisa"means (forms) .
+---> In C++ OOP polymorphism means the ability of an object (or function ) to take multiple froms . 
+---> it allows us to perform  single action in diiferent way.
+
+=================================TYPES OF POLYMORPHISM===================================
+1> Compile time polymorphism,
+        .. Decided at compile time .
+        .. achived using 
+        a>Function overloading 
+        b> Operator overloading .
+2>Run time polymorphism.
+        ..Decided at run time not by compile time . 
+        .. achived at using .
+        --1> virtual function and inheritance .
+
+==========================Run time polymorphism========================
+-> it means the decision of which function to call is made at running , not at compile time .
+ ACHUVED USING 
+  -> virtual function (BASE CLASS)
+  ->function overriding (Derived class)
+  ->base class pointer / reference 
+
+  IF ANY thing is created with using NEW  it is compile time 
+
+  VIRTUAL FUNCTION-
+  it is a membre function in the base class that is declared with the keyword virtual;
+  it allow the derived class to override it ;l
+  when accused using a base class pointer /reference the derived version executes at the runtime.
+
+
+  =========================== ABSTRACTION ========================= 
+  Abstraction is the rpocess of hiding implement details and showing details and showing only the 
+  assential features of an object .
+  ->Focuse on what an object does , not no how it does it .
+   EXAMPLE 
+    car-> User process accelration , but doesn't need to know the  engine works ,
+
+
+    Pure Virtual Function 
+    -> a virtual function with no definition  = 0 at and 
+    .Makes a class abstract
+    .must be overridde in derived class . otherwise in derived class also becomes abstract.
+
+
+    =======ABSTRACT CLASS =====
+    an abstract class in c++ is a class that cannot be instatiated (you cannot create objects of a )
+    >it is designed to be a base class for the function classes 
+    >it contain at least one pure virtual function.
+    

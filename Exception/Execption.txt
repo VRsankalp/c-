@@ -1,0 +1,45 @@
+============   Compile time erroe =================
+>ocurs when thw rules of the programming language are violated .
+>Detected by the compiler during compilation .
+>prevents the program from running .
+Example --
+        Missing semicolo(;)
+        Using undeclared variables
+        >Mismatched parenthses.
+
+----  Logical Error -----  
+>ocurs when the program runs sucessfully but the produces wrong or unexpectd results .
+>Usually due to mistakes  in the logic/algorithm of the program.
+
+
+================================-----------Exception-----------============================
+it is an error ocurred during the execution of the program .
+
+ >>>> Run time error >>>
+        . occure while the progarm is running .
+        >Not detected by the compiler .
+        >Usually leads to abnormal termiantion id not handled .
+        ..Example 
+                Divison by zero 
+                Invalid array index 
+                .File not found .
+
+
+Keywords in execption ..
+try -> block of code that may cause execption
+throw-> used to raise n excepton.
+catch -> block that handles the execption
+
+if else is not use as in case of try and catch because some erorrs are not define 
+where as in try and catch we cannot determine the error 
+// try {
+        //code that may throw execpt
+        throe Exception_value ;
+}
+//catch (type_exception_var ){
+        //handle Exception
+}
+
+
+>>if - else -> preventing the error from happening by chcecking condition befor dividing
+>> execprtion -> allow the program to react if an occure unexceptedly 
