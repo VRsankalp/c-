@@ -1,4 +1,4 @@
-============   Compile time erroe =================
+============   Compile time error =================
 >ocurs when thw rules of the programming language are violated .
 >Detected by the compiler during compilation .
 >prevents the program from running .
@@ -30,8 +30,8 @@ try -> block of code that may cause execption
 throw-> used to raise n excepton.
 catch -> block that handles the execption
 
-if else is not use as in case of try and catch because some erorrs are not define 
-where as in try and catch we cannot determine the error 
+if else is not use as in place  of try and catch because some erorrs are not define 
+where as in try and catch we cannot determine the error  it will automatically idntify the error
 // try {
         //code that may throw execpt
         throe Exception_value ;
@@ -43,3 +43,37 @@ where as in try and catch we cannot determine the error
 
 >>if - else -> preventing the error from happening by chcecking condition befor dividing
 >> execprtion -> allow the program to react if an occure unexceptedly 
+
+
+CONST
+ Means the exception object caught cannot be modified .
+ You can read the message but not change it .
+
+
+
+ catch (const out_of_range &e) here we use &e as it help to prevent meomry leak 
+ where as we can also use *e here but in the last we have to free the memory 
+
+try {
+        throw runtime_error("error);
+} catch (runtime error *e){
+        cout<<e.what()<<endl;      //hard delete is not possible 
+        delete e ;
+        // if you forget to delete the  the memory the n memory leaks happen it may leads to memory leaks
+
+}
+=========NORMAL TERMINATION =========
+ it is occur when a program completes all its statements sucessfully and ends gracefully without and error .
+ CHARACTERISTIC 
+  program executes sequentailly and reaches the endd of the main () function (or  it entry point )
+  all resources are relesed properly
+  No runtime error occur during execution 
+
+====ABNORMAL TERMINATION -=====
+Abnormal termination occurs when a program stops unexceptedly due to an error during execution . 
+This can happen because of runtime errors or unhandled error execptions .
+
+CHARACTERISTIC
+>program crashes or stops sunddenly
+> may not release all resources properly 
+>Typically returns an error code to the operating system.
