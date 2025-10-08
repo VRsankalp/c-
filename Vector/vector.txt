@@ -1,0 +1,3 @@
+A vector is  a dynamic array providede by the C++ Standard template library (STL).
+It can change its size automatically when elements are inserted or deleted , unlike normal arras
+which 
