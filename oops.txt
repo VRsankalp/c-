@@ -6,7 +6,7 @@ ENCAPSULATION --
 KEY POINTS --
 --Protects data from direct access .
 --Only allows controlled access through methods .
---Makes program secure and modular .
+--Makes progrham secure and modular .
 
 ADVANTAGES ---
 --Data Hiding -> sensitive data secure .
