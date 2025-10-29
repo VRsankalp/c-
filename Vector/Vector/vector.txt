@@ -1,0 +1,13 @@
+>>A vector is  a dynamic array providede by the C++ Standard template library (STL).
+>>It can change its size automatically when elements are inserted or deleted , unlike normal array
+  which. 
+
+Element access
+Function                             Description
+v[i]                                Access element at index i (no bound check)
+v.at(i)                             Access element with bound checking
+v.front()                           First element
+v.back()                            Last element
+
+===================                LIST                      ================
+is a type of class 
