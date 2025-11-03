@@ -1,0 +1,66 @@
+whyy to learn dsa ..
+1 performance
+2 Memory managamnet 
+
+classsification of data
+1> primiitive data 
+These are the data that pre define and which can store only one value of one types .
+2> Non pimitive 
+these data are user define  data types and holdes more than one value .
+
+
+LINERA DATA STRUCTURE 
+data are prsent in th sequcence and the element connected to th previous .
+NON LINEAR DATA STRUCTURE
+>> it is not preset in the sequence and 
+>>it is an hierarchical  structure model  in which data arrange in a network model .
+class Solution {
+public:
+     void Rotateta(vector<int>&nums , int st , int end ){
+        while(st<end){
+            int temp = nums[st];
+            nums[st]= nums[end];
+            nums[end] =temp;
+            st++;
+            end--;
+        }
+     } 
+    bool check(vector<int>& nums) {
+        int i = 0 ;
+        int j = i+1 ;
+        while (i<nums.size()){
+            if (nums[i]<nums[j]){
+                i++;
+                j++;
+            }
+            else {
+                break ;
+            }
+
+        }
+        int idx = j-1 ;
+        Rotateta(nums , 0 , i-1);
+        Rotateta(nums , idx , nums.size()-1);
+        Rotateta(nums , 0 ,nums.size()-1 );
+
+    
+        
+
+ //////// TYPES OF COMPLEXITY /////////////////
+ 1> Best case  == big O
+ 2> Averaage case == omega 
+ 3> Worst case == theta 
+
+
+        
+         
+        
+    }
+};
+
+///////////////////// SPACE COMPLEXITY /////////////////
+the amount of space occcupied by the alog in memomry
+///////////TYPES.................
+INput space => Memory FOR storing inputs 
+AuxiLLARY => Extra space  for variable and operation
+
