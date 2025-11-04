@@ -30,6 +30,12 @@ public:
         if (head == NULL)
         {
             tail = newnode;
+        }else{
+            Node* temp=head;
+            while(temp->ptr!=NULL){
+                temp=temp->ptr;
+            }
+            tail=temp;
         }
         head = newnode;
     }
@@ -49,6 +55,48 @@ public:
             }
             tail->ptr = newnode;
         }
+    }
+    void searchElement(int val){
+        Node*temp;
+        temp = head ;
+        while(temp!=NULL){
+            if (temp->data==val){
+                cout<<"element present";
+                return;
+            }
+            temp=temp->ptr;
+        }
+    
+            cout<<"element is not found";
+        
+
+    }
+    void insertNodeAtAnyPosition(int pos, int val ){
+        Node*temp;
+        temp = head ;
+        Node*newnode=new Node(val);
+        int cnt=0;
+        while(temp!=NULL){
+            cnt++;
+            temp=temp->ptr;
+        }
+        
+        if(pos>cnt || pos<0){
+            cout<<"invalid pos";
+            return;
+        }
+        if(pos==0){
+            addFront(val);
+            return;
+        }
+        temp=head;
+        int i=0;
+        while (i<pos-1){
+            temp=temp->ptr;
+            i++;
+        }
+        newnode->ptr=temp->ptr;
+        temp->ptr=newnode;
     }
 
     void deleteFront()
@@ -107,7 +155,8 @@ int main()
     list.addFront(1);
     list.addFront(2);
     list.addBack(100);
-    list.deleteBack();
-    list.deleteFront();
+    // list.deleteBack();
+    // list.deleteFront();
+    list.insertNodeAtAnyPosition(3,15);
     list.printList();
 }
