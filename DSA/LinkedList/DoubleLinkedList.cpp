@@ -11,6 +11,8 @@ class Node{
         next = NULL;
         pre = NULL;
     }
+ 
+
     
     
 };
