@@ -1,0 +1,2 @@
+li.deleteFromBack();
+//     li.printDoubleLinkedList();    
