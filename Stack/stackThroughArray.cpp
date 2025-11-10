@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std ;
 class Stack{
-    int *arr;
+    int *arr;                            
     int capacity;
     int top ;
     public:
