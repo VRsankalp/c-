@@ -13,38 +13,30 @@ public:
         pre = NULL;
     }
 };
-class doubleLinkedList
-{
+class doubleLinkedList{
 public:
     Node *head, *tail;
-    doubleLinkedList()
-    {
+    doubleLinkedList() {
         head = NULL;
         tail = NULL;
     }
-    void addInFront(int val)
-    {
+    void addInFront(int val){
         Node *newnode = new Node(val);
-        if (head == NULL)
-        {
+        if (head == NULL){
             head = tail = newnode;
         }
-        else
-        {
+        else{
             newnode->next = head;
             head->pre = newnode;
             head = newnode;
         }
     }
-    void addInBack(int val)
-    {
+    void addInBack(int val){
         Node *newnode = new Node(val);
-        if (head == NULL)
-        {
+        if (head == NULL){
             head = tail = newnode;
         }
-        else
-        {
+        else{
             tail->next = newnode;
             newnode->pre = tail;
             tail = newnode;
@@ -123,14 +115,30 @@ public:
         else
         {
             tail = tail->pre;
+            temp->pre = NULL;
+            tail->next = NULL;
             delete temp;
             if (tail == NULL)
             {
+                delete temp;
                 return;
             }
-            tail->next = NULL;
         }
     }
+    void searchData(int val){
+        Node*temp = head ;
+        while(temp!=NULL){
+            if(temp->data==val){
+                cout<<val<<"elemet is found \n";
+                return;
+            }
+            temp=temp->next;
+
+        }
+        cout<<"key nOT found ";
+
+    }
+   
 };
 int main()
 {
@@ -148,4 +156,5 @@ int main()
     li.printDoubleLinkedList();
     li.addFromGivenIndex(3,4878787);
     li.printDoubleLinkedList();
+    
 }
